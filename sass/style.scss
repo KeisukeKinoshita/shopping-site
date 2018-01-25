@@ -2,6 +2,7 @@
 
 html{
     font-size:62.5%;
+    
 }
 
 @mixin fontsize($size:24, $base:10){
@@ -14,7 +15,9 @@ $suzu: #887f69;
 $gray2: #e2ddd4;
 $gray1: #b0b0b0;
 $boldred: #9d1a2d;
-
+html{
+background-color: $base_color;
+}
 header{
     .navi{
         box-sizing:border-box;
@@ -124,6 +127,7 @@ header{
 
 main{
     .inner_box{
+        background-color:white;
         width:48%;
             div{
                 height:200px;
@@ -171,7 +175,7 @@ main{
         justify-content:space-around;
         img{
             width:100%;
-            margin-bottom:20px;
+            
         }
             div.pop_1{
                 background-image: url("../images/top/item_07.jpg");
@@ -194,41 +198,41 @@ main{
     }
     
     #shopping_guide{
+        margin-top:20px;
             .title{
                 img{
             width:100%;
             margin-bottom:20px;
-            
                 }
             }
             
     .guide_box{
+        background-color:white;
         display:flex;
+        flex-wrap:wrap;
         .otodoke{
-            width:45%;
+            display:flex;
+            flex-direction:column;
             @include fontsize(13);
-            img{
-                min-height:15px;
-                min-width:20px;
-                   @media(max-width:550px){
-                    max-width:140px;
-                    } 
-            }
             margin-right:10px;
+            img{
+                margin:5px;
+                width:auto;
+                height:auto;
+                @media(max-width:550px){
+                    max-width:60%;
+                    max-height:60%;
+                }
+            }
+          
+
         }
         .kessai{
+            display:flex;
+            flex-direction:column;
+            background-color:white;
             @include fontsize(13);
-                    @media(max-width:550px){
-                    max-width:150px;
-                }
-            width:48%;
-            img{
-                min-height:15px;
-                min-width:20px;
-                @media(max-width:550px){
-                    max-width:150px;
-                }
-            }
+         
         }
     }
     }
@@ -236,14 +240,39 @@ main{
 
 aside{
     #search{
-        input{
-           
-           .icon{
-               width:20px;
-               height:20px;
-           }
+        .search_box{
+            
+            
+            form{
+                width:100%;
+                display:flex;
+            flex-direction:row;
+            p{
+                width:100%;
+                padding:0;
+                margin:0;
+                border:1px solid #eee;
+                background-color: $gray2;
+                display:flex;
+                    flex-direction:center;
+            }
+            input{
+                box-sizing:border-box;
+                margin:0;
+                padding:0;
+                background-color:$gray2;
+            }
+                .text{
+                    width: 80%;
+                    border:none;
+                   
+                    color:black;
+                }
+                .icon{
+                    width:19.9%;
+                }
         }
-        
+        }
     }
     
     #pagelink{
@@ -348,6 +377,7 @@ aside{
 }
 
 .pagetop{
+    border-bottom:20px;
         a{
             img{
         display:flex;
@@ -358,11 +388,6 @@ aside{
             }
     }
 }
-
-
-
-
-
 
 footer{
     border-top: 1px solid #eee;

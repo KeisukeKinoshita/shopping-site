@@ -1,6 +1,9 @@
 html {
   font-size: 62.5%; }
 
+html {
+  background-color: #f9f8f6; }
+
 header .navi {
   box-sizing: border-box; }
 header #header_in {
@@ -54,6 +57,7 @@ header #sp_navi {
     display: none; } }
 
 main .inner_box {
+  background-color: white;
   width: 48%; }
   main .inner_box div {
     height: 200px;
@@ -86,8 +90,7 @@ main #popular_item {
   flex-wrap: wrap;
   justify-content: space-around; }
   main #popular_item img {
-    width: 100%;
-    margin-bottom: 20px; }
+    width: 100%; }
   main #popular_item div.pop_1 {
     background-image: url("../images/top/item_07.jpg"); }
   main #popular_item div.pop_2 {
@@ -100,39 +103,59 @@ main #popular_item {
     background-image: url("../images/top/item_11.jpg"); }
   main #popular_item div.pop_6 {
     background-image: url("../images/top/item_12.jpg"); }
-main #shopping_guide .title img {
-  width: 100%;
-  margin-bottom: 20px; }
-main #shopping_guide .guide_box {
-  display: flex; }
-  main #shopping_guide .guide_box .otodoke {
-    width: 45%;
-    font-size: 13px;
-    font-size: 1.3rem;
-    margin-right: 10px; }
-    main #shopping_guide .guide_box .otodoke img {
-      min-height: 15px;
-      min-width: 20px; }
-      @media (max-width: 550px) {
-        main #shopping_guide .guide_box .otodoke img {
-          max-width: 140px; } }
-  main #shopping_guide .guide_box .kessai {
-    font-size: 13px;
-    font-size: 1.3rem;
-    width: 48%; }
-    @media (max-width: 550px) {
-      main #shopping_guide .guide_box .kessai {
-        max-width: 150px; } }
-    main #shopping_guide .guide_box .kessai img {
-      min-height: 15px;
-      min-width: 20px; }
-      @media (max-width: 550px) {
-        main #shopping_guide .guide_box .kessai img {
-          max-width: 150px; } }
+main #shopping_guide {
+  margin-top: 20px; }
+  main #shopping_guide .title img {
+    width: 100%;
+    margin-bottom: 20px; }
+  main #shopping_guide .guide_box {
+    background-color: white;
+    display: flex;
+    flex-wrap: wrap; }
+    main #shopping_guide .guide_box .otodoke {
+      display: flex;
+      flex-direction: column;
+      font-size: 13px;
+      font-size: 1.3rem;
+      margin-right: 10px; }
+      main #shopping_guide .guide_box .otodoke img {
+        margin: 5px;
+        width: auto;
+        height: auto; }
+        @media (max-width: 550px) {
+          main #shopping_guide .guide_box .otodoke img {
+            max-width: 60%;
+            max-height: 60%; } }
+    main #shopping_guide .guide_box .kessai {
+      display: flex;
+      flex-direction: column;
+      background-color: white;
+      font-size: 13px;
+      font-size: 1.3rem; }
 
-aside #search input .icon {
-  width: 20px;
-  height: 20px; }
+aside #search .search_box form {
+  width: 100%;
+  display: flex;
+  flex-direction: row; }
+  aside #search .search_box form p {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    border: 1px solid #eee;
+    background-color: #e2ddd4;
+    display: flex;
+    flex-direction: center; }
+  aside #search .search_box form input {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background-color: #e2ddd4; }
+  aside #search .search_box form .text {
+    width: 80%;
+    border: none;
+    color: black; }
+  aside #search .search_box form .icon {
+    width: 19.9%; }
 aside #pagelink {
   margin-bottom: 20px; }
   aside #pagelink .link_box {
@@ -200,12 +223,14 @@ aside #shop_info {
     margin-left: auto;
     margin-right: auto; }
 
-.pagetop a img {
-  display: flex;
-  margin-left: auto; }
-  @media (max-width: 550px) {
-    .pagetop a img {
-      margin-right: auto; } }
+.pagetop {
+  border-bottom: 20px; }
+  .pagetop a img {
+    display: flex;
+    margin-left: auto; }
+    @media (max-width: 550px) {
+      .pagetop a img {
+        margin-right: auto; } }
 
 footer {
   border-top: 1px solid #eee;
