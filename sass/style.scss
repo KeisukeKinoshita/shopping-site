@@ -129,6 +129,7 @@ main{
     .inner_box{
         background-color:white;
         width:48%;
+        margin-bottom:10px;
             div{
                 height:200px;
                 max-width:100%;
@@ -219,10 +220,7 @@ main{
                 margin:5px;
                 width:auto;
                 height:auto;
-                @media(max-width:550px){
-                    max-width:60%;
-                    max-height:60%;
-                }
+                
             }
           
 
@@ -235,6 +233,141 @@ main{
          
         }
     }
+    }
+    
+    #pankuzu{
+        .pankuzu_bar{
+            height: 30px;
+            background-color:$gray2;
+            display:flex;
+            flex-direction:row;
+            align-items:center;
+            p{
+                margin:auto 20px;
+            }
+            a{  
+                color:$suzu;
+                margin: 0 10px;
+                @include fontsize(16);
+                img{
+                    zoom: 1.5;
+                }
+                
+            }
+        }
+        margin-bottom:20px;
+    }
+    
+    #cover{
+        .cover_box{
+        height: 170px;
+        background-image: url("../images/list/cate_image.jpg");
+        @media(max-width:550px){
+            background-image: url("../images/list/cate_image_sp.jpg");
+        }
+        background-size:cover;
+        }
+        margin-bottom:20px;
+    }
+    
+    #cate_item{
+        
+        .cate_box{
+        display:flex;
+        flex-wrap: wrap;
+        justify-content:space-around;
+        .cate_1{
+            background-image: url("../images/list/cate_1.jpg");
+        }
+        .cate_2{
+            background-image: url("../images/list/cate_2.jpg");
+        }
+        .cate_3{
+            background-image: url("../images/list/cate_3.jpg");
+        }
+        .cate_4{
+            background-image: url("../images/list/cate_4.jpg");
+        }
+        .cate_5{
+            background-image: url("../images/list/cate_5.jpg");
+        }
+        .cate_6{
+            background-image: url("../images/list/cate_6.jpg");
+        }
+        .cate_7{
+            background-image: url("../images/list/cate_7.jpg");
+        }
+        .cate_8{
+            background-image: url("../images/list/cate_8.jpg");
+        }
+        .cate_9{
+            background-image: url("../images/list/cate_9.jpg");
+           
+            
+        }
+        }
+        .cate_move_button{
+            width: 100%;
+             display:flex;
+                justify-content:space-between;
+            img{
+               
+                zoom: 0.66;
+            }
+        }
+    }
+    
+    #carent_item{
+        box-sizing:border-box;
+        .carent_title{
+            text-align:center;
+            .carent_pc{
+                max-width:70rem;
+            }
+        }
+        .carent_box{
+        display:flex;
+        flex-wrap: wrap;
+        justify-content:space-around;
+        .carent_1{
+            background-image: url("../images/list/carent_1.jpg");
+        }
+        .carent_2{
+            background-image: url("../images/list/carent_2.jpg");
+        }
+        .carent_3{
+            background-image: url("../images/list/carent_3.jpg");
+        }
+        }
+    }
+    
+    @media(max-width:550px){
+        
+        .cate_box:after{
+            content:"";
+            display:block;
+            margin-right:48%;
+        }
+        #carent_item{
+            img.carent_pc{
+                display:none;
+            }
+            
+        }
+        
+        .carent_box:after{
+            content:"";
+            display:block;
+            margin-right:48%;
+        }
+    }
+    
+    @media(min-width:551px){
+        #carent_item{
+            img.carent_sp{
+                display:none;
+            }
+        }
     }
 }
 
