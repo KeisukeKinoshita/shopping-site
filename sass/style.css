@@ -199,20 +199,57 @@ main #carent_item {
       background-image: url("../images/list/carent_2.jpg"); }
     main #carent_item .carent_box .carent_3 {
       background-image: url("../images/list/carent_3.jpg"); }
-@media (max-width: 550px) {
-  main .cate_box:after {
-    content: "";
-    display: block;
-    margin-right: 48%; }
-  main #carent_item img.carent_pc {
-    display: none; }
-  main .carent_box:after {
-    content: "";
-    display: block;
-    margin-right: 48%; } }
-@media (min-width: 551px) {
-  main #carent_item img.carent_sp {
-    display: none; } }
+main .main_area {
+  background-color: white; }
+  main .main_area #product .product_header {
+    display: flex;
+    justify-content: space-between; }
+    main .main_area #product .product_header .product_title p {
+      font-size: 16px;
+      font-size: 1.6rem;
+      font-weight: bold; }
+    main .main_area #product .product_header .product_id p {
+      color: #b0b0b0; }
+  main .main_area #product .product_image {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around; }
+    main .main_area #product .product_image .main_image img {
+      width: 100%; }
+    main .main_area #product .product_image .image_columns ul li {
+      list-style: none; }
+      main .main_area #product .product_image .image_columns ul li img {
+        width: 100%; }
+  @media (max-width: 550px) {
+    main .main_area .cate_box:after {
+      content: "";
+      display: block;
+      margin-right: 48%; }
+    main .main_area #carent_item img.carent_pc {
+      display: none; }
+    main .main_area .carent_box:after {
+      content: "";
+      display: block;
+      margin-right: 48%; }
+    main .main_area .product_image .main_image {
+      width: 100%; }
+    main .main_area .product_image .image_columns {
+      width: 100%; }
+      main .main_area .product_image .image_columns ul {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap; }
+        main .main_area .product_image .image_columns ul li {
+          width: 48%; }
+          main .main_area .product_image .image_columns ul li img {
+            width: 100%; } }
+  @media (min-width: 551px) {
+    main .main_area #carent_item img.carent_sp {
+      display: none; }
+    main .main_area #product .product_image .main_image {
+      width: 75%; }
+    main .main_area #product .product_image .image_columns {
+      width: 20%; } }
 
 aside #search .search_box form {
   width: 100%;

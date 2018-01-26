@@ -341,6 +341,55 @@ main{
         }
     }
     
+    .main_area{
+        background-color:white;
+    
+    
+    #product{
+        .product_header{
+            display:flex;
+            justify-content:space-between;
+            .product_title{
+                p{
+                    @include fontsize(16);
+                    font-weight:bold;
+                }
+            }
+            .product_id{
+                p{
+                    color:$gray1;
+                }
+            }
+        }
+        
+        .product_image{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            
+            
+          
+          .main_image{
+              
+              img{
+              width: 100%;
+              }
+          }  
+        
+           .image_columns{
+               
+            ul{
+                li{ 
+                    list-style:none;
+                    img{
+                       width:100%; 
+                    }
+                }
+            }
+        }
+        }
+    }
+    
     @media(max-width:550px){
         
         .cate_box:after{
@@ -360,14 +409,50 @@ main{
             display:block;
             margin-right:48%;
         }
+        
+        .product_image{
+            .main_image{
+                width: 100%;
+            }
+            .image_columns{
+                width: 100%;
+                ul{
+                    width:100%;
+                    display: flex;
+                    flex-wrap: wrap;
+                    li{
+                        width: 48%;
+                        
+                     img{
+                         width: 100%;
+                     }
+                     
+                    }
+                }
+                
+            }
+        }
+        
     }
-    
     @media(min-width:551px){
         #carent_item{
             img.carent_sp{
                 display:none;
             }
         }
+        
+        #product{
+            .product_image{
+                .main_image{
+                    width:75%;
+                }
+                
+                .image_columns{
+                    width:20%;
+                }
+            }
+        }
+    }
     }
 }
 
