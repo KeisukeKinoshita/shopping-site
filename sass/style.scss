@@ -145,11 +145,12 @@ header{
                     display:none;
            }
         #icon{
-            margin-left:4%;
+            width:12%;
+            margin-left:2.5%;
             display:flex;
             justify-content:space-between;
             a{
-                padding-right:15%;
+            max-height:40px;
             }
             img{
             zoom:0.7;
@@ -197,7 +198,10 @@ main{
     }
     #eyecatch{
         @media(max-width:550px){
-        margin-top: 10px;
+        margin-top: 1.5%;
+        }
+        @media(min-width:551px){
+            margin-top:1%;
         }
     }
     #new_item{

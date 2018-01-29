@@ -81,11 +81,12 @@ header #header_in {
     header #navi_bar #sp_navi_li {
       display: none; }
     header #navi_bar #icon {
-      margin-left: 4%;
+      width: 12%;
+      margin-left: 2.5%;
       display: flex;
       justify-content: space-between; }
       header #navi_bar #icon a {
-        padding-right: 15%; }
+        max-height: 40px; }
       header #navi_bar #icon img {
         zoom: 0.7; }
     header #navi_bar #navi_menu_button {
@@ -121,7 +122,10 @@ main .inner_box {
         margin-bottom: 0; } }
 @media (max-width: 550px) {
   main #eyecatch {
-    margin-top: 10px; } }
+    margin-top: 1.5%; } }
+@media (min-width: 551px) {
+  main #eyecatch {
+    margin-top: 1%; } }
 @media (max-width: 550px) {
   main #new_item .pc_title {
     display: none; }
