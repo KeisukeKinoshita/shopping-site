@@ -197,11 +197,40 @@ main{
                 }
     }
     #eyecatch{
+        .owl-dots{
+            text-align:left;
+            margin-top:0;
+            margin-right:5px;
+            .owl-dot.active{
+                span{
+                background-color: $boldred;
+                }
+            }
+        }
         @media(max-width:550px){
         margin-top: 1.5%;
+        .owl-dots{
+            span{
+                width:22px;
+                height:3px;
+                margin-left:5px;
+                margin-right:5px;
+            }
+        }
         }
         @media(min-width:551px){
             margin-top:1%;
+            .owl-dots{
+                .owl-dot{
+                    span{
+                        width: 20px;
+                        height:1px;
+                        margin-right: 3px;
+                        margin-left: 3px;
+                        padding-bottom:1px;
+                    }
+                }
+            }
         }
     }
     #new_item{
@@ -252,6 +281,7 @@ main{
             justify-content:space-around;
              background-color:white;   
              .center_line{
+                 
                  margin:8px 0;
                  height:3px;
                  background-color:$base_color;

@@ -120,12 +120,29 @@ main .inner_box {
         letter-spacing: 0.05rem;
         margin-top: 10px;
         margin-bottom: 0; } }
+main #eyecatch .owl-dots {
+  text-align: left;
+  margin-top: 0;
+  margin-right: 5px; }
+  main #eyecatch .owl-dots .owl-dot.active span {
+    background-color: #9d1a2d; }
 @media (max-width: 550px) {
   main #eyecatch {
-    margin-top: 1.5%; } }
+    margin-top: 1.5%; }
+    main #eyecatch .owl-dots span {
+      width: 22px;
+      height: 3px;
+      margin-left: 5px;
+      margin-right: 5px; } }
 @media (min-width: 551px) {
   main #eyecatch {
-    margin-top: 1%; } }
+    margin-top: 1%; }
+    main #eyecatch .owl-dots .owl-dot span {
+      width: 20px;
+      height: 1px;
+      margin-right: 3px;
+      margin-left: 3px;
+      padding-bottom: 1px; } }
 @media (max-width: 550px) {
   main #new_item .pc_title {
     display: none; }
