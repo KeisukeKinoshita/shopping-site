@@ -967,25 +967,31 @@ main{
         }
         }
 }
-
-
 footer{
-    border-top: 1px solid #eee;
-    text-align:center;
-    @include fontsize(12);
-    ul{
-        margin-top:4%;
-        display:flex;
-        justify-content: center;
-        flex-wrap:wrap;
-        
-        li{
-            display:block;
-            margin-left:5px;
-            list-style:none;
-            a{
-                color:#626262;
+    @media(min-width:551px){
+        @include fontsize(10);
+        ul{
+            margin-top:3%;
+            display:flex;
+            flex-direction:row;
+            justify-content:center;
+            margin-left:auto;
+            margin-right:auto;
+            margin-bottom:1%;
+            @include fontsize(10);
+            li:first-of-type{
+                list-style:none;
+            }
+            li{
+                display:block;
+                margin-left:4%;
+                a{
+                    color:#626262;
+                }
             }
         }
     }
+    text-align:center;
+    
+
 }
