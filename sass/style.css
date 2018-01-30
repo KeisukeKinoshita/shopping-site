@@ -612,27 +612,80 @@ main .main_area {
           width: 35%;
           margin-left: 8%;
           padding-top: 8%; } }
-#aside #category {
-  margin-bottom: 20px; }
-  #aside #category .cate_navi_button {
-    width: 100%;
-    background-color: #887f69;
-    height: 50px;
-    display: flex;
-    justify-content: center;
-    align-items: center; }
-  #aside #category .cate_navi_li {
-    display: none; }
-    #aside #category .cate_navi_li li {
-      list-style: none;
+@media (max-width: 550px) {
+  #aside #category {
+    width: 99%;
+    margin-top: 3%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 6.5%; }
+    #aside #category .cate_navi_button {
       width: 100%;
-      height: 40px;
-      text-align: center;
-      padding-top: 15px;
-      padding-bottom: 10px;
-      border-bottom: 1px solid #eee; }
-      #aside #category .cate_navi_li li a {
-        color: #626262; }
+      background-color: #887f69;
+      height: 44px; }
+      #aside #category .cate_navi_button a {
+        display: block; }
+        #aside #category .cate_navi_button a img {
+          width: 28%;
+          margin-top: 6%;
+          margin-left: 5%; }
+    #aside #category .cate_navi_li {
+      margin-bottom: 0;
+      display: none; }
+      #aside #category .cate_navi_li li {
+        list-style: none;
+        background-color: white;
+        width: 100%;
+        height: 46px;
+        border-bottom: 1px solid #eee;
+        margin-bottom: 0; }
+        #aside #category .cate_navi_li li a {
+          height: 100%;
+          display: block;
+          color: #626262; }
+          #aside #category .cate_navi_li li a span {
+            display: block;
+            font-size: 13px;
+            font-size: 1.3rem;
+            padding-top: 5%;
+            margin-left: 5%; } }
+@media (min-width: 551px) {
+  #aside #category {
+    width: 92%;
+    margin-top: 5%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 6.5%; }
+    #aside #category .cate_navi_button {
+      width: 100%;
+      background-color: #887f69;
+      height: 32px; }
+      #aside #category .cate_navi_button a {
+        display: block; }
+        #aside #category .cate_navi_button a img {
+          width: 40%;
+          margin-top: 8%;
+          margin-left: 8%; }
+    #aside #category .cate_navi_li {
+      margin-bottom: 0;
+      display: none; }
+      #aside #category .cate_navi_li li {
+        list-style: none;
+        background-color: white;
+        width: 100%;
+        height: 32px;
+        border-bottom: 1px solid #eee;
+        margin-bottom: 0; }
+        #aside #category .cate_navi_li li a {
+          height: 100%;
+          display: block;
+          color: #626262; }
+          #aside #category .cate_navi_li li a span {
+            display: block;
+            font-size: 10px;
+            font-size: 1rem;
+            padding-top: 6%;
+            margin-left: 8%; } }
 #aside #about {
   margin-bottom: 20px; }
   #aside #about .about_midasi {
