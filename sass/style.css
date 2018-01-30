@@ -510,7 +510,8 @@ main .main_area {
   @media (max-width: 550px) {
     #aside #search {
       padding-top: 5%;
-      padding-bottom: 7%; }
+      padding-bottom: 7%;
+      margin-bottom: 7%; }
       #aside #search .search_title {
         display: none; }
       #aside #search .search_box {
@@ -545,7 +546,11 @@ main .main_area {
                 margin-bottom: 0; } }
   @media (min-width: 551px) {
     #aside #search {
-      margin-left: 2%; }
+      padding-bottom: 9%;
+      width: 92%;
+      margin-right: auto;
+      margin-left: auto;
+      margin-bottom: 4%; }
       #aside #search .search_title {
         margin-top: 3%;
         width: 100%; }
@@ -557,36 +562,56 @@ main .main_area {
         margin-left: auto;
         margin-right: auto;
         width: 80%; }
-        #aside #search .search_box form span {
-          border: 1px solid #eee;
-          width: 100%;
-          background-color: #e2ddd4;
-          display: flex;
-          flex-direction: row; }
-          #aside #search .search_box form span .text_box .text {
-            margin: 0;
-            padding: 0;
+        #aside #search .search_box form {
+          margin-bottom: 0; }
+          #aside #search .search_box form span {
+            border: 1px solid #eee;
             width: 100%;
-            height: 100%;
-            border: none;
-            color: black;
-            background-color: #e2ddd4; }
-          #aside #search .search_box form span .icon_box {
-            width: 25px;
-            height: 25px;
-            display: flex; }
-            #aside #search .search_box form span .icon_box .icon {
-              height: 100%; } }
-#aside #pagelink {
-  margin-bottom: 20px; }
-  #aside #pagelink .link_box {
-    background-color: #887f69; }
-    #aside #pagelink .link_box a {
-      width: 100%;
-      height: 40px;
-      display: flex;
-      justify-content: center;
-      align-items: center; }
+            background-color: #e2ddd4;
+            display: flex;
+            flex-direction: row; }
+            #aside #search .search_box form span .text_box .text {
+              margin: 0;
+              padding: 0;
+              width: 100%;
+              height: 100%;
+              border: none;
+              color: black;
+              background-color: #e2ddd4; }
+            #aside #search .search_box form span .icon_box {
+              width: 25px;
+              height: 25px;
+              display: flex; }
+              #aside #search .search_box form span .icon_box .icon {
+                height: 100%;
+                margin-bottom: 0; } }
+@media (max-width: 550px) {
+  #aside #pagelink {
+    width: 100%; }
+    #aside #pagelink .link_box {
+      background-color: #887f69; }
+      #aside #pagelink .link_box a {
+        display: block;
+        height: 45px; }
+        #aside #pagelink .link_box a img {
+          margin-left: 5%;
+          margin-top: 5%; } }
+@media (min-width: 551px) {
+  #aside #pagelink {
+    width: 92%;
+    margin-right: auto;
+    margin-left: auto; }
+    #aside #pagelink .link_box {
+      background-color: #887f69; }
+      #aside #pagelink .link_box a {
+        width: 100%;
+        height: 32px;
+        display: block; }
+        #aside #pagelink .link_box a img {
+          display: block;
+          width: 35%;
+          margin-left: 8%;
+          padding-top: 8%; } }
 #aside #category {
   margin-bottom: 20px; }
   #aside #category .cate_navi_button {
