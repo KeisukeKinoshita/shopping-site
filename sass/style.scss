@@ -948,17 +948,26 @@ main{
 }
 
 .pagetop{
-    border-bottom:20px;
+    @media(min-width:551px){
+        img{
+                width:8%;
+                display:flex;
+                margin-right:1%;
+                margin-top:1%;
+                margin-left:auto;
+        }
+        padding-bottom:2%;
+        border-bottom: 1px solid #626262;
+    }
+        @media(max-width:550px){
         a{
             img{
-        display:flex;
-        margin-left:auto;
-        @media(max-width:550px){
-            margin-right:auto;
-        }
+                margin-right:auto;
             }
-    }
+        }
+        }
 }
+
 
 footer{
     border-top: 1px solid #eee;
