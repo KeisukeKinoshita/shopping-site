@@ -200,11 +200,24 @@ main #new_item .new_box {
     background-image: url("../images/top/item_05.jpg"); }
   main #new_item .new_box div.new_6 {
     background-image: url("../images/top/item_06.jpg"); }
-main #popular_item .pop_img {
-  margin-top: 40px;
-  margin-bottom: 28px; }
-  main #popular_item .pop_img img {
+@media (max-width: 550px) {
+  main #popular_item .pop_pc_img {
+    display: none; } }
+@media (min-width: 551px) {
+  main #popular_item .pop_sp_img {
+    display: none; } }
+main #popular_item .pop_pc_img {
+  display: block;
+  margin-top: 5%;
+  margin-bottom: 1%; }
+  main #popular_item .pop_pc_img img {
     width: 100%; }
+main #popular_item .pop_sp_img img {
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 4%;
+  margin-bottom: 6%; }
 main #popular_item .pop_box {
   display: flex;
   flex-wrap: wrap;
