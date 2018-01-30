@@ -439,6 +439,53 @@ main{
                    }
                }
             }
+            .kessai{
+            margin-top:1%;
+            display:flex;
+            flex-direction:column;
+            background-color:white;
+            @include fontsize(12);
+                .boxes{
+                  width:88%;
+                    display:flex;
+                    flex-direction: column;
+                    margin-top: 9%;
+                    margin-left:auto;
+                    margin-right:auto;
+                    .box1{
+                        img{
+                            margin-top:2%;
+                        }
+                    }
+                    .box2{
+                        img{
+                            margin-top:3%;
+                        }
+                    }
+                    .box3{
+                        img{
+                            margin-top:3%;
+                            width:100%;
+                        }
+                    }
+                    .box4{
+                        margin-top:3%;
+                        
+                        p{
+                            @include fontsize(13);
+                            margin-bottom:0;
+                        }
+                    }
+                    .box5{
+                        img{
+                            margin-top:5%;
+                        }
+                        p{
+                                @include fontsize(13);
+                        }
+                    }
+                }
+            }
         }
         @media(min-width:551px){
         .otodoke{

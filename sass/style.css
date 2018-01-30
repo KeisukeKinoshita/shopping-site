@@ -277,6 +277,38 @@ main #shopping_guide .guide_box {
           margin-top: 6%; }
         main #shopping_guide .guide_box .otodoke .boxes .box4 p {
           font-size: 13px;
+          font-size: 1.3rem; }
+    main #shopping_guide .guide_box .kessai {
+      margin-top: 1%;
+      display: flex;
+      flex-direction: column;
+      background-color: white;
+      font-size: 12px;
+      font-size: 1.2rem; }
+      main #shopping_guide .guide_box .kessai .boxes {
+        width: 88%;
+        display: flex;
+        flex-direction: column;
+        margin-top: 9%;
+        margin-left: auto;
+        margin-right: auto; }
+        main #shopping_guide .guide_box .kessai .boxes .box1 img {
+          margin-top: 2%; }
+        main #shopping_guide .guide_box .kessai .boxes .box2 img {
+          margin-top: 3%; }
+        main #shopping_guide .guide_box .kessai .boxes .box3 img {
+          margin-top: 3%;
+          width: 100%; }
+        main #shopping_guide .guide_box .kessai .boxes .box4 {
+          margin-top: 3%; }
+          main #shopping_guide .guide_box .kessai .boxes .box4 p {
+            font-size: 13px;
+            font-size: 1.3rem;
+            margin-bottom: 0; }
+        main #shopping_guide .guide_box .kessai .boxes .box5 img {
+          margin-top: 5%; }
+        main #shopping_guide .guide_box .kessai .boxes .box5 p {
+          font-size: 13px;
           font-size: 1.3rem; } }
   @media (min-width: 551px) {
     main #shopping_guide .guide_box .otodoke {
