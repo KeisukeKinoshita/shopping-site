@@ -96,23 +96,29 @@ main .inner_box {
   background-color: white; }
   @media (max-width: 550px) {
     main .inner_box {
-      width: 45%;
-      padding: 2px; }
-      main .inner_box div {
-        height: 130px;
-        max-width: 98%;
-        background-size: cover; }
-      main .inner_box p:first-of-type {
-        font-size: 11px;
-        font-size: 1.1rem;
-        letter-spacing: 0.1rem;
-        margin-top: 4%;
-        margin-bottom: 0;
-        line-height: 1.4; }
-      main .inner_box p:last-child {
-        font-size: 13px;
-        font-size: 1.3rem;
-        margin-top: 5%; } }
+      width: 49%; }
+      main .inner_box span {
+        display: block;
+        margin-top: 13px;
+        margin-right: auto;
+        margin-left: auto;
+        max-width: 88%; }
+        main .inner_box span div {
+          height: 130px;
+          max-width: 100%;
+          background-size: cover; }
+        main .inner_box span p:first-of-type {
+          font-size: 1px;
+          font-size: 0.1rem;
+          letter-spacing: 0.1rem;
+          margin-top: 2%;
+          margin-bottom: 0;
+          line-height: 1.4; }
+        main .inner_box span p:last-of-type {
+          font-size: 12px;
+          font-size: 1.2rem;
+          margin-top: 5%;
+          margin-bottom: 14%; } }
   @media (min-width: 551px) {
     main .inner_box {
       background-color: white;
@@ -137,7 +143,8 @@ main .inner_box {
           margin-top: 5%;
           margin-bottom: 6%; }
       main .inner_box div {
-        height: 150px; } }
+        height: 150px;
+        background-size: cover; } }
 main #eyecatch .owl-dots {
   text-align: left;
   margin-top: 0;
@@ -163,8 +170,6 @@ main #eyecatch .owl-dots {
       padding-bottom: 1px; } }
 @media (max-width: 550px) {
   main #new_item .pc_title {
-    display: none; }
-  main #new_item .center_line {
     display: none; } }
 @media (min-width: 551px) {
   main #new_item .sp_title {
@@ -178,7 +183,7 @@ main #new_item .sp_title img {
   margin-left: auto;
   margin-right: auto;
   margin-top: 2%;
-  margin-bottom: 8%; }
+  margin-bottom: 6%; }
 main #new_item .new_box {
   display: flex;
   flex-wrap: wrap;

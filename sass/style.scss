@@ -167,24 +167,34 @@ main{
     .inner_box{
         background-color:white;
         @media(max-width:550px){
-                   width:45%;
-        padding:2px;
-            div{
-                height:130px;
-                max-width:98%;
-                background-size:cover;
+           width:49%;
+            
+            span{
+                    display:block;
+                    margin-top:13px;
+                    margin-right:auto;
+                    margin-left:auto;
+                    max-width:88%;
+                    div{
+                        height:130px;
+                        max-width:100%;
+                        background-size:cover;
+                    }
+                    p:first-of-type{
+                        @include fontsize(1);
+                        letter-spacing: 0.1rem;
+                        margin-top:2%;
+                        margin-bottom: 0;
+                        line-height:1.4;
+                        }
+                    p:last-of-type{
+                        @include fontsize(12);
+                        margin-top:5%;
+                        margin-bottom:14%;
+                    }
             }
-            p:first-of-type{
-            @include fontsize(11);
-            letter-spacing: 0.1rem;
-            margin-top:4%;
-            margin-bottom: 0;
-            line-height:1.4;
-            }
-            p:last-child{
-                @include fontsize(13);
-                margin-top:5%;
-            } 
+            
+            
         }
         @media(min-width:551px){
                 background-color:white;
@@ -211,7 +221,7 @@ main{
                 }
                 div{
                         height:150px;
-
+                        background-size:cover;
                     }
 
         }
@@ -263,9 +273,6 @@ main{
                     
                 }
             }
-            .center_line{
-                display:none;
-            }
         }
         @media(min-width:551px){
             .sp_title{
@@ -287,7 +294,7 @@ main{
             margin-left:auto;
             margin-right:auto;
             margin-top:2%;
-            margin-bottom:8%;
+            margin-bottom:6%;
             }
         }
         .new_box{
