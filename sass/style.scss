@@ -779,72 +779,80 @@ main{
     
     .main_area{
         background-color:white;
+        margin-left:1%;
+        width:99%;
     
-    
-    #product{
-        .product_header{
-            display:flex;
-            justify-content:space-between;
-            .product_title{
-                p{
-                    @include fontsize(16);
-                    font-weight:bold;
-                }
+        #product{
+            @media(min-width:551px){
+                width:85%;
+                display:block;
+                margin-left:auto;
+                margin-right:auto;
+                .product_header{
+                    display:flex;
+                    justify-content:space-between;
+                    padding-bottom:4%;
+                    border-bottom:1px solid #626262;
+                    .product_title{
+                        width:49%;
+                        p{
+                            display:block;
+                            @include fontsize(12);
+                            font-weight:bold;
+                            margin-bottom:0;
+                            margin-left:3%;
+                            margin-top:12%;
+                        }
+                    }
+                    .product_id{
+                        width:49%;
+                        p{
+                            color:$gray1;
+                            display:flex;
+                            margin-left:77%;
+                            margin-top:13%;
+                            margin-bottom:0;
+                            @include fontsize(10);
+                        }
+                    }
+                }    
             }
-            .product_id{
-                p{
-                    color:$gray1;
-                }
-            }
-        }
-        
-        .product_image{
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-around;
-            
-            
-          
-          .main_image{
-              
-              img{
-              width: 100%;
-              }
-          }  
-        
-           .image_columns{
-               
-            ul{
-                li{ 
-                    list-style:none;
-                    img{
-                       width:100%; 
+            .product_image{
+                display: flex;
+                flex-wrap: wrap;
+                margin-top:3%;
+                padding-bottom:2%;
+                border-bottom:1px solid #626262;
+              .main_image{
+                  width:70%;
+                  img{
+                  width: 98.5%;
+                  margin-left:2%;
+                  }
+              }  
+               .image_columns{
+                   width:29%;
+                ul{
+                    display:flex;
+                    flex-wrap:wrap;
+                    li{ 
+                        list-style:none;
+                        width:41%;
+                        margin-bottom:0;
+                        margin-left:7%;
+                        img{
+                           width:108%; 
+                        }
                     }
                 }
             }
-        }
+            }
         }
     }
-    
-    @media(max-width:550px){
+ /*
+   @media(max-width:550px){
         
-        .cate_box:after{
-            content:"";
-            display:block;
-            margin-right:48%;
-        }
-        #carent_item{
-            img.carent_pc{
-                display:none;
-            }
-            
-        }
-        
-        .carent_box:after{
-            content:"";
-            display:block;
-            margin-right:48%;
-        }
+       
         
         .product_image{
             .main_image{
@@ -871,11 +879,6 @@ main{
         
     }
     @media(min-width:551px){
-        #carent_item{
-            img.carent_sp{
-                display:none;
-            }
-        }
         
         #product{
             .product_image{
@@ -888,8 +891,7 @@ main{
                 }
             }
         }
-    }
-    }
+    }*/
 }
 
 #aside{
@@ -1336,6 +1338,7 @@ main{
         }
         }
 }
+
 footer{
     @media(max-width:550px){
         margin-top:10%;
@@ -1371,13 +1374,13 @@ footer{
 
         }
         a{
-        color:#626262;
-        text-decoration:none;
-        p{
-            margin-top:2%;
-            text-align:center;
-            @include fontsize(1);
-        }
+            color:#626262;
+            text-decoration:none;
+            p{
+                margin-top:2%;
+                text-align:center;
+                @include fontsize(1);
+            }
         }
     }
 }
