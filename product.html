@@ -15,7 +15,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1" > 
     </head>
     <body>
-        <header>
+         <header>
             <div id="header_in" class="container">
                 <div class="row">
                     <div id="header_logo" class="u-full-width six columns">
@@ -24,9 +24,9 @@
                         </a>
                     </div>
                     <div class="u-full-width six columns navi">
-                        <div id="sp_navi">
+                        <div id="navi_bar">
                             <div id="pc_navi_li">
-                              <ul>
+                              <ul style="margin-bottom:2%">
                                   <li><a href="login.html"><img src="images/top/menu_login.png"alt="LOGIN"></a></li>
                                   <li><a href="cart.html"><img src="images/top/menu_cart.png"alt="CART"></a></li>
                                   <li><a href="mypage.html"><img src="images/top/menu_mypage.png"alt="MYPAGE"></a></li>
@@ -41,12 +41,15 @@
                                   <li><a href="shopping_guide.html"><img src="images/top/menu_guide.png"alt="SHOPPING GUIDE"></a></li>
                               </ul>
                             </div>
-                           <div class="icon">
-                            <img src="images/top_sp/fb.png" alt="fb" srcset="images/top_sp/fb@2x.png 2x">
-                           <img src="images/top_sp/insta.png" alt="insta" srcset="images/top_sp/insta@2x.png 2x">
+                           <div id="icon">
+                            <a href="#">
+                                <img src="images/top_sp/fb.png" alt="fb" srcset="images/top_sp/fb@2x.png 2x">
+                            </a>
+                           <a href="#">
+                               <img src="images/top_sp/insta.png" alt="insta" srcset="images/top_sp/insta@2x.png 2x">
+                           </a>
                            <img id="navi_menu_button" src="images/top_sp/menu_icon.png" alt="menu" srcset="images/top_sp/menu_icon@2x.png 2x">
                         </div>
-
                         </div>
         
                     </div>
@@ -171,15 +174,21 @@
                     </div>
                 </div>
              </main>
-                <aside class="three columns">
+             <aside class="three columns" id="aside">
                 <div id="search">
-                    <img src="images/top/itemserch.png" alt="itemsearch">
+                    <div class="search_title">
+                        <img src="images/top/itemserch.png" alt="itemsearch">
+                    </div>
                     <div class="search_box">
                     <form action="/" method="GET">
-                            <p class="box">
-                            <input type="text" placeholder="search" class="text">
-                            <input type="image" src="images/top/search_icon.png" alt="search" class="icon">
-                            </p>
+                            <span>
+                                <div class="text_box">
+                                    <input type="text" placeholder="search" class="text">
+                                </div>
+                                <div class="icon_box">
+                                    <input type="image" src="images/top/search_icon.png" alt="search" class="icon">
+                                </div>
+                            </span>
                     </form>
                     </div>
                 </div>
@@ -189,19 +198,18 @@
                             <img src="images/top/pagelink.png">
                         </a>
                     </div>
-                    
                 </div>
                 <div id="category">
                     <div class="cate_navi_button">
                         <a><img src="images/top/categories.png" alt="カテゴリー一覧"></a>
                     </div>
                     <ul class="cate_navi_li">
-                        <li><a href="#">カテゴリー名</a></li>
-                        <li><a href="#">カテゴリー名</a></li>
-                        <li><a href="#">カテゴリー名</a></li>
-                        <li><a href="#">カテゴリー名</a></li>
-                        <li><a href="#">カテゴリー名</a></li>
-                        <li><a href="#">カテゴリー名</a></li>
+                        <li><a href="#"><span>カテゴリー名</span></a></li>
+                        <li><a href="#"><span>カテゴリー名</span></a></li>
+                        <li><a href="#"><span>カテゴリー名</span></a></li>
+                        <li><a href="#"><span>カテゴリー名</span></a></li>
+                        <li><a href="#"><span>カテゴリー名</span></a></li>
+                        <li><a href="#"><span>カテゴリー名</span></a></li>
                     </ul>
                 </div>
                 <div id="about">
@@ -210,23 +218,27 @@
                         </div>
                         <div class="about_box">
                         <img src="images/top/about_img.jpg" alt="イメージ画像">
-                        <p>お店の説明が入ります。お店の説明が入ります。お店の説明が入ります。お店の説明が入ります。</p>
+                        <span>
+                        <p>お店の説明お店の説明お店の説明が入ります。お店の説明お店の説明お店の説明</p>
                         <a href="#"><img src="images/top/more_btn.png" alt="more" class="more"></a>
+                        </span>
+
                         </div>
-                </div>
+                </div> 
                 <div id="shop_info">
                     <div class="info_midasi">
                         <img src="images/top/shop_info.png" alt="shop_info">
                     </div>
                     <div class="info_box">
                         <img src="images/top/shopinfo_img.jpg" alt="イメージ画像" class="image">
-                        <p>お店の説明が入ります。お店の説明が入ります。お店の説明が入ります。お店の説明が入ります。</p>
+                        <span>
+                            <p>お店の説明お店の説明お店の説明が入りますお店の説明お店の説明お店の説明</p>
                         <a><img src="images/top/more_btn.png" alt="more" ></a>
+                        </span>
                     </div>
                 </div>
-                
             </aside>
-            </div>
+             </div>
         </div>
         <div class="container">
             <div class="row">
@@ -240,12 +252,12 @@
         <footer class="container">
             <div class="row">
                 <div class="twelve columns">
-                    <ul>
-                        <li><a href="#">特定商取引に基づく表示</a></li>
-                        <li><a href="#">プライバシーポリシー</a></li>
-                        <li><a href="#">マイページ</a></li>
-                    </ul>
-                              <p class="copy">copyright (C) SampleCompany all rights reserved.</p>
+                    <div class="houritu">
+                        <a href="#">特定商取引に基づく表示</a>・
+                        <a href="#">プライバシーポリシー</a>・
+                        <a href="#">マイページ
+                    </div>
+                    <p class="copy">copyright (C) SampleCompany all rights reserved.</p>
                 </div>
             </div>
         </footer>

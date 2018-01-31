@@ -377,23 +377,56 @@ main #shopping_guide .guide_box {
           font-size: 0.1rem; }
           main #shopping_guide .guide_box .kessai .boxes .box5 img {
             width: 20%; } }
-main #pankuzu {
-  margin-bottom: 20px; }
-  main #pankuzu .pankuzu_bar {
-    height: 30px;
-    background-color: #e2ddd4;
-    display: flex;
-    flex-direction: row;
-    align-items: center; }
-    main #pankuzu .pankuzu_bar p {
-      margin: auto 20px; }
-    main #pankuzu .pankuzu_bar a {
-      color: #887f69;
-      margin: 0 10px;
-      font-size: 16px;
-      font-size: 1.6rem; }
-      main #pankuzu .pankuzu_bar a img {
-        zoom: 1.5; }
+@media (max-width: 550px) {
+  main #pankuzu {
+    margin-top: 2%; }
+    main #pankuzu .pankuzu_bar {
+      background-color: #e2ddd4;
+      display: flex;
+      padding-top: 2%;
+      padding-left: 3%;
+      padding-bottom: 2%;
+      font-size: 13px;
+      font-size: 1.3rem; }
+      main #pankuzu .pankuzu_bar a {
+        text-decoration: none;
+        display: block;
+        color: #887f69;
+        margin-left: 2px; }
+        main #pankuzu .pankuzu_bar a img {
+          display: block;
+          margin-top: 6px;
+          margin-right: 6px; }
+      main #pankuzu .pankuzu_bar p {
+        display: flex;
+        flex-direction: row;
+        width: 80%;
+        margin-bottom: 0; }
+        main #pankuzu .pankuzu_bar p a {
+          text-decoration: none;
+          margin-right: 4%; } }
+@media (min-width: 551px) {
+  main #pankuzu {
+    margin-top: 1%;
+    margin-bottom: 1.5%; }
+    main #pankuzu .pankuzu_bar {
+      width: 99%;
+      background-color: #e2ddd4;
+      display: flex;
+      flex-direction: row;
+      align-items: center; }
+      main #pankuzu .pankuzu_bar a {
+        color: #887f69; }
+        main #pankuzu .pankuzu_bar a img {
+          zoom: 0.9;
+          padding-left: 36%; }
+      main #pankuzu .pankuzu_bar p {
+        margin-left: 1%;
+        font-size: 1px;
+        font-size: 0.1rem;
+        display: flex;
+        padding-top: 0;
+        margin-bottom: 0; } }
 main #cover {
   margin-bottom: 20px; }
   main #cover .cover_box {
@@ -433,6 +466,12 @@ main #cate_item .cate_move_button {
     zoom: 0.66; }
 main #carent_item {
   box-sizing: border-box; }
+  @media (max-width: 550px) {
+    main #carent_item .carent_pc {
+      display: none; } }
+  @media (min-width: 551px) {
+    main #carent_item .carent-sp {
+      display: none; } }
   main #carent_item .carent_title {
     text-align: center; }
     main #carent_item .carent_title .carent_pc {
