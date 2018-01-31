@@ -718,12 +718,14 @@ main .main_area {
         font-size: 12px;
         font-size: 1.2rem;
         line-height: 17px;
+        margin-top: 8%;
+        margin-left: 3%;
         margin-bottom: 10%; }
       #aside #about .about_box img.more {
         display: flex;
         margin-left: 3%;
         width: 70%;
-        margin-top: 0; } }
+        margin-top: 2%; } }
 @media (min-width: 551px) {
   #aside #about {
     width: 92%;
@@ -744,32 +746,88 @@ main .main_area {
       #aside #about .about_box img {
         width: 100%;
         margin-top: 6%; }
-      #aside #about .about_box p {
+      #aside #about .about_box span p {
         font-size: 8px;
         font-size: 0.8rem;
         margin-bottom: 0; }
-      #aside #about .about_box img.more {
+      #aside #about .about_box span img.more {
         display: flex;
         margin-right: auto;
         margin-left: auto;
         width: 50%;
-        margin-top: 0; } }
-#aside #shop_info {
-  margin-bottom: 20px; }
-  #aside #shop_info .info_midasi {
-    width: 100%;
-    background-color: #887f69;
-    height: 50px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 10px; }
-  #aside #shop_info .info_box img.image {
-    width: 100%; }
-  #aside #shop_info .info_box img {
-    display: flex;
-    margin-left: auto;
-    margin-right: auto; }
+        margin-top: 2%; } }
+@media (max-width: 550px) {
+  #aside #shop_info {
+    margin-top: 8%; }
+    #aside #shop_info .info_midasi {
+      width: 99%;
+      background-color: #887f69;
+      height: 44px;
+      display: flex;
+      margin-left: auto;
+      margin-right: auto;
+      margin-bottom: 3.5%; }
+      #aside #shop_info .info_midasi img {
+        width: 24%;
+        height: 24%;
+        display: block;
+        padding-top: 6%;
+        margin-left: 5%; }
+    #aside #shop_info .info_box {
+      display: flex;
+      margin-left: 3%; }
+      #aside #shop_info .info_box img.image {
+        width: 44%;
+        height: 22%;
+        margin-top: 1%; }
+      #aside #shop_info .info_box span {
+        display: block;
+        width: 48%;
+        margin-left: auto;
+        margin-right: auto; }
+        #aside #shop_info .info_box span p {
+          font-size: 12px;
+          font-size: 1.2rem;
+          margin-bottom: 2%; }
+        #aside #shop_info .info_box span a img {
+          width: 70%;
+          height: 26%;
+          margin-left: 3%;
+          margin-top: 2%; } }
+@media (min-width: 551px) {
+  #aside #shop_info {
+    margin-top: 13%; }
+    #aside #shop_info .info_midasi {
+      width: 92%;
+      background-color: #887f69;
+      height: 33px;
+      display: flex;
+      margin-left: auto;
+      margin-right: auto;
+      margin-bottom: 5%; }
+      #aside #shop_info .info_midasi img {
+        width: 34%;
+        height: 25%;
+        display: block;
+        padding-top: 8%;
+        margin-left: 8%; }
+    #aside #shop_info .info_box {
+      display: block;
+      width: 82%;
+      margin-left: 10%; }
+      #aside #shop_info .info_box img.image {
+        width: 100%; }
+      #aside #shop_info .info_box img {
+        display: flex;
+        margin-left: auto;
+        margin-right: auto; }
+      #aside #shop_info .info_box span p {
+        font-size: 1px;
+        font-size: 0.1rem;
+        margin-top: 2%;
+        margin-bottom: 5%; }
+      #aside #shop_info .info_box span a img {
+        width: 52%; } }
 
 @media (min-width: 551px) {
   .pagetop {
