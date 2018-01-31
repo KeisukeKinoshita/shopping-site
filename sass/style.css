@@ -427,15 +427,23 @@ main #shopping_guide .guide_box {
         display: flex;
         padding-top: 0;
         margin-bottom: 0; } }
-main #cover {
-  margin-bottom: 20px; }
-  main #cover .cover_box {
-    height: 170px;
-    background-image: url("../images/list/cate_image.jpg");
-    background-size: cover; }
-    @media (max-width: 550px) {
-      main #cover .cover_box {
-        background-image: url("../images/list/cate_image_sp.jpg"); } }
+@media (max-width: 550px) {
+  main #cover {
+    margin-bottom: 2%;
+    margin-top: 3.5%; }
+    main #cover .cover_box {
+      height: 95px;
+      width: 100%;
+      background-image: url("../images/list/cate_image_sp.jpg"); } }
+@media (min-width: 551px) {
+  main #cover {
+    margin-bottom: 3.5%; }
+    main #cover .cover_box {
+      height: 125px;
+      width: 99%;
+      background-image: url("../images/list/cate_image.jpg"); } }
+main #cover .cover_box {
+  background-size: cover; }
 main #cate_item .cate_box {
   display: flex;
   flex-wrap: wrap;

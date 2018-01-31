@@ -640,15 +640,27 @@ main{
         }
     }
     #cover{
-        .cover_box{
-        height: 170px;
-        background-image: url("../images/list/cate_image.jpg");
         @media(max-width:550px){
+            .cover_box{
+        height: 95px;
+        width:100%;
             background-image: url("../images/list/cate_image_sp.jpg");
         }
+        margin-bottom:2%;
+        margin-top:3.5%;
+        }
+        @media(min-width:551px){
+            .cover_box{
+        height: 125px;
+        width:99%;
+        background-image: url("../images/list/cate_image.jpg");
+        }
+             margin-bottom:3.5%;
+        }
+        .cover_box{
         background-size:cover;
         }
-        margin-bottom:20px;
+        
     }
     #cate_item{
         
