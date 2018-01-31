@@ -618,7 +618,7 @@ main .main_area {
     margin-top: 3%;
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: 6.5%; }
+    margin-bottom: 3.5%; }
     #aside #category .cate_navi_button {
       width: 100%;
       background-color: #887f69;
@@ -655,7 +655,7 @@ main .main_area {
     margin-top: 5%;
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: 6.5%; }
+    margin-bottom: 3.5%; }
     #aside #category .cate_navi_button {
       width: 100%;
       background-color: #887f69;
@@ -673,7 +673,7 @@ main .main_area {
         list-style: none;
         background-color: white;
         width: 100%;
-        height: 32px;
+        height: 33px;
         border-bottom: 1px solid #eee;
         margin-bottom: 0; }
         #aside #category .cate_navi_li li a {
@@ -686,25 +686,74 @@ main .main_area {
             font-size: 1rem;
             padding-top: 6%;
             margin-left: 8%; } }
-#aside #about {
-  margin-bottom: 20px; }
-  #aside #about .about_midasi {
-    margin-top: 10px;
-    margin-bottom: 10px;
-    background-color: #887f69;
-    width: 100%;
-    height: 50px;
-    display: flex;
-    justify-content: center;
-    align-items: center; }
-  #aside #about .about_box img {
-    width: 100%; }
-  #aside #about .about_box img.more {
-    display: flex;
-    margin-right: auto;
+@media (max-width: 550px) {
+  #aside #about {
+    width: 99%;
     margin-left: auto;
-    width: 100px;
-    height: 30px; }
+    margin-right: auto; }
+    #aside #about .about_midasi {
+      display: block;
+      background-color: #887f69;
+      height: 43px; }
+      #aside #about .about_midasi img {
+        display: block;
+        width: 15%;
+        padding-left: 5%;
+        padding-top: 6%; }
+    #aside #about .about_box {
+      display: flex;
+      flex-direction: row;
+      width: 100%; }
+      #aside #about .about_box img {
+        width: 43%;
+        margin-top: 4%;
+        margin-left: 3%;
+        height: 26%; }
+      #aside #about .about_box span {
+        width: 48%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto; }
+      #aside #about .about_box p {
+        font-size: 12px;
+        font-size: 1.2rem;
+        line-height: 17px;
+        margin-bottom: 10%; }
+      #aside #about .about_box img.more {
+        display: flex;
+        margin-left: 3%;
+        width: 70%;
+        margin-top: 0; } }
+@media (min-width: 551px) {
+  #aside #about {
+    width: 92%;
+    margin-left: auto;
+    margin-right: auto; }
+    #aside #about .about_midasi {
+      display: block;
+      background-color: #887f69;
+      height: 33px; }
+      #aside #about .about_midasi img {
+        display: block;
+        width: 20%;
+        padding-left: 8%;
+        padding-top: 8%; }
+    #aside #about .about_box {
+      width: 90%;
+      margin-left: 6%; }
+      #aside #about .about_box img {
+        width: 100%;
+        margin-top: 6%; }
+      #aside #about .about_box p {
+        font-size: 8px;
+        font-size: 0.8rem;
+        margin-bottom: 0; }
+      #aside #about .about_box img.more {
+        display: flex;
+        margin-right: auto;
+        margin-left: auto;
+        width: 50%;
+        margin-top: 0; } }
 #aside #shop_info {
   margin-bottom: 20px; }
   #aside #shop_info .info_midasi {
