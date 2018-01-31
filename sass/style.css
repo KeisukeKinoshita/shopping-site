@@ -1,3 +1,4 @@
+@charset "UTF-8";
 html {
   font-size: 62.5%; }
 
@@ -793,7 +794,7 @@ main .main_area {
           width: 70%;
           height: 26%;
           margin-left: 3%;
-          margin-top: 2%; } }
+          margin-top: 2% giaaaaa; } }
 @media (min-width: 551px) {
   #aside #shop_info {
     margin-top: 13%; }
@@ -840,31 +841,52 @@ main .main_area {
       margin-top: 1%;
       margin-left: auto; } }
 @media (max-width: 550px) {
-  .pagetop a img {
-    margin-right: auto; } }
+  .pagetop {
+    margin-top: 11%; }
+    .pagetop a img {
+      display: block;
+      margin-right: auto;
+      margin-left: auto;
+      width: 31%; } }
 
-footer {
-  text-align: center; }
-  @media (min-width: 551px) {
-    footer {
+@media (max-width: 550px) {
+  footer {
+    margin-top: 10%;
+    border-top: 1px solid #626262; }
+    footer .houritu {
       font-size: 10px;
-      font-size: 1rem; }
-      footer ul {
-        margin-top: 3%;
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        margin-left: auto;
-        margin-right: auto;
-        margin-bottom: 1%;
-        font-size: 10px;
-        font-size: 1rem; }
-        footer ul li:first-of-type {
-          list-style: none; }
-        footer ul li {
-          display: block;
-          margin-left: 4%; }
-          footer ul li a {
-            color: #626262; } }
+      font-size: 1rem;
+      width: 90%;
+      margin-top: 16%;
+      margin-left: 6%;
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+      　color: #626262; }
+      footer .houritu a {
+        text-decoration: nono;
+        color: #626262; }
+    footer a {
+      text-decoration: none; }
+      footer a p {
+        color: #626262;
+        font-size: 12px;
+        font-size: 1.2rem;
+        text-align: center;
+        margin-top: 4%; } }
+@media (min-width: 551px) {
+  footer .houritu {
+    margin-top: 3%;
+    text-align: center;
+    font-size: 1px;
+    font-size: 0.1rem; }
+  footer a {
+    color: #626262;
+    text-decoration: none; }
+    footer a p {
+      margin-top: 2%;
+      text-align: center;
+      font-size: 1px;
+      font-size: 0.1rem; } }
 
 /*# sourceMappingURL=style.css.map */
