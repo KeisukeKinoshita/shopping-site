@@ -125,10 +125,10 @@ main .inner_box {
     main .inner_box {
       background-color: white;
       width: 33%;
-      margin-top: 1px; }
+      margin-top: 1.5px; }
       main .inner_box span {
         display: block;
-        margin-top: 13px;
+        margin-top: 6%;
         margin-right: auto;
         margin-left: auto;
         max-width: 88%; }
@@ -136,7 +136,7 @@ main .inner_box {
           font-size: 1px;
           font-size: 0.1rem;
           letter-spacing: 0.005rem;
-          margin-top: 2%;
+          margin-top: 4%;
           margin-bottom: 0;
           line-height: 1.4; }
         main .inner_box span p:last-child {
@@ -465,14 +465,15 @@ main #cover .cover_box {
   main #cate_item .cate_box {
     margin-left: 1%; }
   main #cate_item .cate_move_button {
-    margin-top: 4%;
+    margin-top: 3.5%;
     margin-left: auto;
     width: 99%;
     display: flex;
     justify-content: space-between;
     flex-direction: row; }
     main #cate_item .cate_move_button a {
-      width: 17%; }
+      width: 17%;
+      height: 28.5px; }
       main #cate_item .cate_move_button a img {
         width: 100%; } }
 main #cate_item .cate_box {
@@ -498,17 +499,19 @@ main #cate_item .cate_box {
   main #cate_item .cate_box .cate_9 {
     background-image: url("../images/list/cate_9.jpg"); }
 main #carent_item {
+  margin-top: 3.5%;
   box-sizing: border-box; }
   @media (max-width: 550px) {
     main #carent_item .carent_pc {
       display: none; } }
   @media (min-width: 551px) {
-    main #carent_item .carent-sp {
+    main #carent_item .carent_sp {
       display: none; } }
   main #carent_item .carent_title {
-    text-align: center; }
+    text-align: center;
+    margin-bottom: 2%; }
     main #carent_item .carent_title .carent_pc {
-      max-width: 70rem; }
+      width: 99%; }
   main #carent_item .carent_box {
     display: flex;
     flex-wrap: wrap;

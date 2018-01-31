@@ -200,17 +200,17 @@ main{
         @media(min-width:551px){
                 background-color:white;
                 width:33%;
-                margin-top:1px;
+                margin-top:1.5px;
                 span{
                     display:block;
-                    margin-top:13px;
+                    margin-top:6%;
                     margin-right:auto;
                     margin-left:auto;
                     max-width:88%;
                     p:first-of-type{
                         @include fontsize(1);
                         letter-spacing: 0.005rem;
-                        margin-top:2%;
+                        margin-top:4%;
                         margin-bottom: 0;
                         line-height:1.4;
                         }
@@ -690,7 +690,7 @@ main{
                 margin-left:1%;
             }
             .cate_move_button{
-                margin-top:4%;
+                margin-top:3.5%;
                 margin-left:auto;
                 width: 99%;
                 display:flex;
@@ -698,6 +698,7 @@ main{
                 flex-direction:row;
                 a{
                     width:17%;
+                    height:28.5px;
                     img{
                        width:100%
                     }
@@ -747,15 +748,17 @@ main{
             }
         }
         @media(min-width:551px){
-            .carent-sp{
+            .carent_sp{
                 display:none;
             }
         }
+        margin-top:3.5%;
         box-sizing:border-box;
         .carent_title{
             text-align:center;
+            margin-bottom:2%;
             .carent_pc{
-                max-width:70rem;
+                width:99%;
             }
         }
         .carent_box{
