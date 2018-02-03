@@ -385,6 +385,9 @@ main{
                 }
         }
         @media(min-width:551px){
+            .title{
+                background-color:$base_color;
+            }
             .sp_title{
                 display:none;
                 }
@@ -577,7 +580,7 @@ main{
         }
         }
     }
-}
+    }
 
     #pankuzu{
         @media(max-width:550px){
@@ -742,23 +745,14 @@ main{
 
     }
     #carent_item{
-        @media(max-width:550px){
-            .carent_pc{
-                display:none;
-            }
-        }
-        @media(min-width:551px){
-            .carent_sp{
-                display:none;
-            }
-        }
-        margin-top:3.5%;
+                margin-top:3.5%;
         box-sizing:border-box;
         .carent_title{
             text-align:center;
             margin-bottom:2%;
             .carent_pc{
                 width:99%;
+                
             }
         }
         .carent_box{
@@ -775,19 +769,176 @@ main{
             background-image: url("../images/list/carent_3.jpg");
         }
         }
+        @media(max-width:550px){
+            .carent_pc{
+                display:none;
+            }
+            .carent_title{
+                margin-bottom:6%;
+            }
+            .carent_box:after{
+                content:"";
+                display:block;
+                width:49%;
+            }
+        }
+        @media(min-width:551px){
+            .carent_sp{
+                display:none;
+            }
+        }
     }
     
     .main_area{
+        @media(max-width:550px){
+            margin-left:0;
+            width:100%;
+        }
         background-color:white;
-        margin-left:1%;
+        @media(min-width:551px){
+            margin-left:1%;
         width:99%;
-    
+        }
+        
         #product{
+            @media(max-width:550px){
+                .product_title{
+                    p{
+                        font-weight:bold;
+                        margin-top:10%;
+                        margin-bottom:0;
+                        letter-spacing:1px;
+                        
+                    }
+                }
+                .product_id{
+                    p{
+                        color:$gray1;
+                        @include fontsize(11);
+                        padding-bottom:4%;
+                        border-bottom:1px solid #eee;
+                        margin-bottom:3%;
+                        
+                    }
+                }
+                .product_image{
+                #main_image{
+                    img{
+                        width:100%;
+                        
+                    }
+                }
+                #image_list{
+                    display:flex;
+                    flex-wrap:wrap;
+                    justify-content:space-around;
+                    margin-top:1%;
+                    margin-bottom:0;
+                    border-bottom:1px solid #eee;
+                    li{
+                        width:19%;
+                        list-style:none;
+                        margin-bottom:0;
+                        display:block;
+                        margin-right:auto;
+                        img{
+                            width:100%;
+                        }
+                    }
+                }
+                }
+                .product_hyou{
+                    .hyou_color{
+                        .color_title{
+                            img{
+                                margin-top:5%;
+                            }
+                        }
+                        table{
+                            border:1px solid #eee;
+                            th,td{
+                                border:1px solid #eee;
+                            }
+                            th{
+                                background-color:$base_color;
+                            }
+                            margin-top:3%;
+                            width:100%;
+                            thead{
+                                th{
+                                    padding:0;
+                                }
+                            }
+                            .th_1{
+                                width:27%;
+                            }
+                            .th_2,.th_3{
+                                width:37%;
+                                color:$suzu;
+                                height:4rem;
+                                text-align:center;
+                                @include fontsize(13);
+                            }
+                            .th_4{
+                                padding:0;
+                                text-align:center;
+                                padding-right:8px;
+                                @include fontsize(13);
+                            }
+                            .td_1,.td_2{
+                                padding:0;
+                                text-align:center;
+                                height:3.5rem;
+                                img{
+                                    width:20%;
+                                    vertical-align:middle;
+                                }
+                            }
+                        }
+                        
+                    }
+                    .hyou_price{
+                        table{
+                        width:100%;
+                        border-bottom:hidden;
+                        th{
+                            padding-top:2%;
+                        }
+                        .second{
+                            th{
+                            img{
+                                padding-top:10%;
+                            }
+                            }
+                            td{
+                                img{
+                                    width:93%;
+                                    height:46%;
+                                }
+                            }
+                        }
+                        
+                        }
+                        .cartbox{
+                            a{
+                                display:block;
+                                img{
+                                    display:flex;
+                                    margin-top:3%;
+                                    margin-left:auto;
+                                    margin-right:auto;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
             @media(min-width:551px){
                 width:85%;
                 display:block;
                 margin-left:auto;
                 margin-right:auto;
+                background-color:white;
                 .product_header{
                     display:flex;
                     justify-content:space-between;
@@ -816,84 +967,222 @@ main{
                         }
                     }
                 }    
-            }
-            .product_image{
-                display: flex;
-                flex-wrap: wrap;
-                margin-top:3%;
-                padding-bottom:2%;
-                border-bottom:1px solid #626262;
-              .main_image{
-                  width:70%;
-                  img{
-                  width: 98.5%;
-                  margin-left:2%;
-                  }
-              }  
-               .image_columns{
-                   width:29%;
-                ul{
-                    display:flex;
-                    flex-wrap:wrap;
-                    li{ 
-                        list-style:none;
-                        width:41%;
-                        margin-bottom:0;
-                        margin-left:7%;
-                        img{
-                           width:108%; 
+                .product_image{
+                    display: flex;
+                    flex-wrap: wrap;
+                    margin-top:3%;
+                    padding-bottom:2%;
+                    border-bottom:1px solid #626262;
+                    .main_image{
+                          width:70%;
+                          img{
+                          width: 98.5%;
+                          margin-left:2%;
+                          }
+                      }  
+                    .image_columns{
+                           width:29%;
+                        ul{
+                            display:flex;
+                            flex-wrap:wrap;
+                            margin-bottom:0;
+                            li{ 
+                                list-style:none;
+                                width:40%;
+                                margin-bottom:0;
+                                margin-left:7%;
+                                img{
+                                   width:108%; 
+                                }
+                            }
+                        }
+                    }
+                    
+                }
+                .product_hyou{
+                    .hyou_color{
+                        .color_title{
+                            img{
+                                margin-top:3%;
+                                margin-left:1%;
+                                width:17%;
+                            }
+                        }
+                        table,th,td{
+                            border:1px solid #eee;
+                        }
+                        th,td{
+                            text-align:center;
+                            vertical-align:middle;
+                            padding:0;
+                            @include fontsize(10);
+                            }
+                        th{
+                            color:$suzu;
+                            background-color:$base_color;
+                        }
+                        tr{
+                            height:29px;
+                        }
+                        table{
+                            width:98%;
+                            margin:1% auto 3.5% auto;
+                            thead{
+                                .th_1{
+                                    width:28%;
+                                }
+                                .th_2,.th_3{
+                                    width:36%;
+                                    padding:0;
+                                    border-right:hidden;
+                                }
+                            }
+                            tbody{
+                                td{
+                                    img{
+                                        width:10%;
+                                    }
+                                }
+                                .td_1,.td_2{
+                                    border-right:hidden;
+                                }
+                            }
+                        }
+                    }
+                    .hyou_price{
+                        table,th,td{
+                            border:1px solid #eee;
+                            padding:0;
+                            border-right:hidden;
+                            border-left:hidden;
+                        }
+                        span{
+                            display:flex;
+                            border-bottom:1px solid #eee;
+                        table{
+                            width:56%;
+                            margin-bottom:0;
+                            margin-left:1%;
+                            border-bottom:1px solid #eee;
+                            th{
+                                width:27%;
+                                img{
+                                    width:49%;
+                                    margin-top:18%;
+                                }
+                            }
+                            .border{
+                                width:64%;
+                                    img{
+                                        width:58%;
+                                        margin-top:11%;
+                                        margin-bottom:7%;
+                                        margin-left:13%;
+                                    }
+                            }
+                        .second{
+                            th{
+                                width:15%;
+                            
+                            img{
+                                width:71%;
+                                margin-top:14%;
+                            }
+                            }
+                            td{
+                                width:42%;
+                                height:5.2rem;
+                                img{
+                                    width:70%;
+                                    height:40%;
+                                    margin-top:6%;
+                                    margin-left:14%;
+                                }
+                            }
+                        }
+                    }
+                    .cartbox{
+                            width:42%;
+                            a{
+                                display:block;
+                                img{
+                                    width:90%;
+                                    margin-left:9%;
+                                }
+                            }
                         }
                     }
                 }
-            }
-            }
-        }
-    }
- /*
-   @media(max-width:550px){
-        
-       
-        
-        .product_image{
-            .main_image{
-                width: 100%;
-            }
-            .image_columns{
-                width: 100%;
-                ul{
-                    width:100%;
-                    display: flex;
-                    flex-wrap: wrap;
-                    li{
-                        width: 48%;
-                        
-                     img{
-                         width: 100%;
-                     }
-                     
-                    }
-                }
                 
             }
+                .product_setumei{
+                   .setumei_midasi{
+                       margin-top:4%;
+                       padding-bottom:2%;
+                       border-bottom:1px solid #eee;
+                       img{
+                           margin-left:1%;
+                           width:11%;
+                       }
+                   }
+                  .setumei_title{
+                      margin-top:3%;
+                      img{
+                      width:71%;
+                      margin-left:1%;
+                      }
+                  }
+                   .setumei_honbun{
+                       width:98%;
+                       display:block;
+                       margin-left:auto;
+                       margin-right:auto;
+                       margin-top:3%;
+                       @include fontsize(10);
+                       line-height:179%;
+                   }
+                   .setumei_hyou{
+                       table{
+                           
+                           width:98%;
+                           margin-top:4%;
+                           margin-left:auto;
+                           margin-right:auto;
+                           border:1px solid #eee;
+                           @include fontsize(1);
+                           padding:0;
+                           padding-bottom:10%;
+                           th{
+                               border:1px solid #eee;
+                               background-color:$base_color;
+                               color:$suzu;
+                               width:28%;
+                               text-align:center;
+                               vertical-align:middle;
+                               padding:0;
+                               height:3rem;
+                           }
+                           td{
+                               width:72%;
+                               padding:0;
+                               color:$suzu;
+                               span{
+                                   @include fontsize(1);
+                                   margin-left:3%;
+                               }
+                               
+                           }
+                       }
+                       .space{
+                           height:3rem;
+                           width:100%;
+                       }
+                   }
+                }
         }
-        
     }
-    @media(min-width:551px){
-        
-        #product{
-            .product_image{
-                .main_image{
-                    width:75%;
-                }
-                
-                .image_columns{
-                    width:20%;
-                }
-            }
-        }
-    }*/
 }
-
+}
 #aside{
     @media(min-width:551px){
         width:25%;
@@ -1371,7 +1660,6 @@ footer{
             margin-top:3%;
             text-align:center;
             @include fontsize(1);
-
         }
         a{
             color:#626262;
