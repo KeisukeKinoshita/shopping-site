@@ -415,21 +415,25 @@ main #shopping_guide .guide_box {
     main #pankuzu .pankuzu_bar {
       width: 100%;
       background-color: #e2ddd4;
+      border-radius: 5px;
       display: flex;
       flex-direction: row;
       align-items: center; }
       main #pankuzu .pankuzu_bar a {
+        display: block;
         color: #887f69; }
         main #pankuzu .pankuzu_bar a img {
           zoom: 0.9;
           padding-left: 36%; }
       main #pankuzu .pankuzu_bar p {
-        margin-left: 1%;
+        margin-left: 2%;
         font-size: 1px;
         font-size: 0.1rem;
         display: flex;
+        justify-content: space-between;
         padding-top: 0;
-        margin-bottom: 0; } }
+        margin-bottom: 0;
+        width: 19%; } }
 @media (max-width: 550px) {
   main #cover {
     margin-bottom: 2%;
@@ -455,6 +459,7 @@ main #cover .cover_box {
   main #cate_item .cate_move_button {
     margin-top: 7%;
     margin-left: auto;
+    margin-bottom: 6%;
     width: 99%;
     display: flex;
     justify-content: space-between;
@@ -526,7 +531,9 @@ main #carent_item {
     main #carent_item .carent_box:after {
       content: "";
       display: block;
-      width: 49%; } }
+      width: 49%; }
+    main #carent_item .carent_box {
+      margin-bottom: 8%; } }
   @media (min-width: 551px) {
     main #carent_item .carent_sp {
       display: none; } }
@@ -665,7 +672,7 @@ main .main_area {
           font-size: 1px;
           font-size: 0.1rem; }
       main .main_area #product .product_setumei .setumei_hyou .space {
-        height: 2.5rem; } }
+        height: 3rem; } }
     @media (min-width: 551px) {
       main .main_area #product {
         width: 85%;
@@ -862,7 +869,7 @@ main .main_area {
   background-color: white; }
   @media (max-width: 550px) {
     #aside #search {
-      padding-top: 5%;
+      padding-top: 7%;
       padding-bottom: 7%;
       margin-bottom: 7%; }
       #aside #search .search_title {
@@ -894,9 +901,11 @@ main .main_area {
               display: flex;
               width: 10%; }
               #aside #search .search_box form span .icon_box .icon {
-                height: 100%;
-                width: 100%;
-                margin-bottom: 0; } }
+                height: 13px;
+                width: 13px;
+                margin-bottom: 0;
+                margin-top: 7px;
+                margin-right: 5px; } }
   @media (min-width: 551px) {
     #aside #search {
       padding-bottom: 9%;
@@ -932,12 +941,14 @@ main .main_area {
               color: black;
               background-color: #e2ddd4; }
             #aside #search .search_box form span .icon_box {
-              width: 25px;
-              height: 25px;
-              display: flex; }
+              display: flex;
+              width: 25%; }
               #aside #search .search_box form span .icon_box .icon {
-                height: 100%;
-                margin-bottom: 0; } }
+                height: 13px;
+                width: 13px;
+                margin-bottom: 0;
+                margin-top: 5px;
+                margin-right: 5px; } }
 @media (max-width: 550px) {
   #aside #pagelink {
     width: 100%; }
