@@ -540,269 +540,316 @@ main .main_area {
     main .main_area {
       margin-left: 1%;
       width: 99%; } }
-  @media (max-width: 550px) {
-    main .main_area #product .product_title p {
-      font-weight: bold;
-      margin-top: 10%;
-      margin-bottom: 0;
-      letter-spacing: 1px; }
-    main .main_area #product .product_id p {
-      color: #b0b0b0;
-      font-size: 11px;
-      font-size: 1.1rem;
-      padding-bottom: 4%;
-      border-bottom: 1px solid #eee;
-      margin-bottom: 3%; }
-    main .main_area #product .product_image #main_image img {
-      width: 100%; }
-    main .main_area #product .product_image #image_list {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: space-around;
-      margin-top: 1%;
-      margin-bottom: 0;
-      border-bottom: 1px solid #eee; }
-      main .main_area #product .product_image #image_list li {
-        width: 19%;
-        list-style: none;
+  main .main_area #product {
+    font-family: serif; }
+    @media (max-width: 550px) {
+      main .main_area #product .product_title p {
+        font-weight: bold;
+        margin-top: 10%;
         margin-bottom: 0;
-        display: block;
-        margin-right: auto; }
-        main .main_area #product .product_image #image_list li img {
-          width: 100%; }
-    main .main_area #product .product_hyou .hyou_color .color_title img {
-      margin-top: 5%; }
-    main .main_area #product .product_hyou .hyou_color table {
-      border: 1px solid #eee;
-      margin-top: 3%;
-      width: 100%; }
-      main .main_area #product .product_hyou .hyou_color table th, main .main_area #product .product_hyou .hyou_color table td {
-        border: 1px solid #eee; }
-      main .main_area #product .product_hyou .hyou_color table th {
-        background-color: #f9f8f6; }
-      main .main_area #product .product_hyou .hyou_color table thead th {
-        padding: 0; }
-      main .main_area #product .product_hyou .hyou_color table .th_1 {
-        width: 27%; }
-      main .main_area #product .product_hyou .hyou_color table .th_2, main .main_area #product .product_hyou .hyou_color table .th_3 {
-        width: 37%;
-        color: #887f69;
-        height: 4rem;
-        text-align: center;
-        font-size: 13px;
-        font-size: 1.3rem; }
-      main .main_area #product .product_hyou .hyou_color table .th_4 {
-        padding: 0;
-        text-align: center;
-        padding-right: 8px;
-        font-size: 13px;
-        font-size: 1.3rem; }
-      main .main_area #product .product_hyou .hyou_color table .td_1, main .main_area #product .product_hyou .hyou_color table .td_2 {
-        padding: 0;
-        text-align: center;
-        height: 3.5rem; }
-        main .main_area #product .product_hyou .hyou_color table .td_1 img, main .main_area #product .product_hyou .hyou_color table .td_2 img {
-          width: 20%;
-          vertical-align: middle; }
-    main .main_area #product .product_hyou .hyou_price table {
-      width: 100%;
-      border-bottom: hidden; }
-      main .main_area #product .product_hyou .hyou_price table th {
-        padding-top: 2%; }
-      main .main_area #product .product_hyou .hyou_price table .second th img {
-        padding-top: 10%; }
-      main .main_area #product .product_hyou .hyou_price table .second td img {
-        width: 93%;
-        height: 46%; }
-    main .main_area #product .product_hyou .hyou_price .cartbox a {
-      display: block; }
-      main .main_area #product .product_hyou .hyou_price .cartbox a img {
-        display: flex;
-        margin-top: 3%;
-        margin-left: auto;
-        margin-right: auto; } }
-  @media (min-width: 551px) {
-    main .main_area #product {
-      width: 85%;
-      display: block;
-      margin-left: auto;
-      margin-right: auto;
-      background-color: white; }
-      main .main_area #product .product_header {
-        display: flex;
-        justify-content: space-between;
+        letter-spacing: 1px; }
+      main .main_area #product .product_id p {
+        color: #b0b0b0;
+        font-size: 11px;
+        font-size: 1.1rem;
         padding-bottom: 4%;
-        border-bottom: 1px solid #626262; }
-        main .main_area #product .product_header .product_title {
-          width: 49%; }
-          main .main_area #product .product_header .product_title p {
-            display: block;
-            font-size: 12px;
-            font-size: 1.2rem;
-            font-weight: bold;
-            margin-bottom: 0;
-            margin-left: 3%;
-            margin-top: 12%; }
-        main .main_area #product .product_header .product_id {
-          width: 49%; }
-          main .main_area #product .product_header .product_id p {
-            color: #b0b0b0;
-            display: flex;
-            margin-left: 77%;
-            margin-top: 13%;
-            margin-bottom: 0;
-            font-size: 10px;
-            font-size: 1rem; }
-      main .main_area #product .product_image {
+        border-bottom: 1px solid #eee;
+        margin-bottom: 3%; }
+      main .main_area #product .product_image #main_image img {
+        width: 100%; }
+      main .main_area #product .product_image #image_list {
         display: flex;
         flex-wrap: wrap;
-        margin-top: 3%;
-        padding-bottom: 2%;
-        border-bottom: 1px solid #626262; }
-        main .main_area #product .product_image .main_image {
-          width: 70%; }
-          main .main_area #product .product_image .main_image img {
-            width: 98.5%;
-            margin-left: 2%; }
-        main .main_area #product .product_image .image_columns {
-          width: 29%; }
-          main .main_area #product .product_image .image_columns ul {
-            display: flex;
-            flex-wrap: wrap;
-            margin-bottom: 0; }
-            main .main_area #product .product_image .image_columns ul li {
-              list-style: none;
-              width: 40%;
-              margin-bottom: 0;
-              margin-left: 7%; }
-              main .main_area #product .product_image .image_columns ul li img {
-                width: 108%; }
-      main .main_area #product .product_hyou .hyou_color .color_title img {
-        margin-top: 3%;
-        margin-left: 1%;
-        width: 17%; }
-      main .main_area #product .product_hyou .hyou_color table, main .main_area #product .product_hyou .hyou_color th, main .main_area #product .product_hyou .hyou_color td {
-        border: 1px solid #eee; }
-      main .main_area #product .product_hyou .hyou_color th, main .main_area #product .product_hyou .hyou_color td {
-        text-align: center;
-        vertical-align: middle;
-        padding: 0;
-        font-size: 10px;
-        font-size: 1rem; }
-      main .main_area #product .product_hyou .hyou_color th {
-        color: #887f69;
-        background-color: #f9f8f6; }
-      main .main_area #product .product_hyou .hyou_color tr {
-        height: 29px; }
-      main .main_area #product .product_hyou .hyou_color table {
-        width: 98%;
-        margin: 1% auto 3.5% auto; }
-        main .main_area #product .product_hyou .hyou_color table thead .th_1 {
-          width: 28%; }
-        main .main_area #product .product_hyou .hyou_color table thead .th_2, main .main_area #product .product_hyou .hyou_color table thead .th_3 {
-          width: 36%;
-          padding: 0;
-          border-right: hidden; }
-        main .main_area #product .product_hyou .hyou_color table tbody td img {
-          width: 10%; }
-        main .main_area #product .product_hyou .hyou_color table tbody .td_1, main .main_area #product .product_hyou .hyou_color table tbody .td_2 {
-          border-right: hidden; }
-      main .main_area #product .product_hyou .hyou_price table, main .main_area #product .product_hyou .hyou_price th, main .main_area #product .product_hyou .hyou_price td {
-        border: 1px solid #eee;
-        padding: 0;
-        border-right: hidden;
-        border-left: hidden; }
-      main .main_area #product .product_hyou .hyou_price span {
-        display: flex;
+        justify-content: space-around;
+        margin-top: 1%;
+        margin-bottom: 0;
         border-bottom: 1px solid #eee; }
-        main .main_area #product .product_hyou .hyou_price span table {
-          width: 56%;
+        main .main_area #product .product_image #image_list li {
+          width: 19%;
+          list-style: none;
           margin-bottom: 0;
-          margin-left: 1%;
-          border-bottom: 1px solid #eee; }
-          main .main_area #product .product_hyou .hyou_price span table th {
-            width: 27%; }
-            main .main_area #product .product_hyou .hyou_price span table th img {
-              width: 49%;
-              margin-top: 18%; }
-          main .main_area #product .product_hyou .hyou_price span table .border {
-            width: 64%; }
-            main .main_area #product .product_hyou .hyou_price span table .border img {
-              width: 58%;
-              margin-top: 11%;
-              margin-bottom: 7%;
-              margin-left: 13%; }
-          main .main_area #product .product_hyou .hyou_price span table .second th {
-            width: 15%; }
-            main .main_area #product .product_hyou .hyou_price span table .second th img {
-              width: 71%;
-              margin-top: 14%; }
-          main .main_area #product .product_hyou .hyou_price span table .second td {
-            width: 42%;
-            height: 5.2rem; }
-            main .main_area #product .product_hyou .hyou_price span table .second td img {
-              width: 70%;
-              height: 40%;
-              margin-top: 6%;
-              margin-left: 14%; }
-        main .main_area #product .product_hyou .hyou_price span .cartbox {
-          width: 42%; }
-          main .main_area #product .product_hyou .hyou_price span .cartbox a {
-            display: block; }
-            main .main_area #product .product_hyou .hyou_price span .cartbox a img {
-              width: 90%;
-              margin-left: 9%; }
+          display: block;
+          margin-right: auto; }
+          main .main_area #product .product_image #image_list li img {
+            width: 100%; }
+      main .main_area #product .product_hyou .hyou_color .color_title img {
+        margin-top: 5%; }
+      main .main_area #product .product_hyou .hyou_color table {
+        border: 1px solid #eee;
+        margin-top: 3%;
+        width: 100%; }
+        main .main_area #product .product_hyou .hyou_color table th, main .main_area #product .product_hyou .hyou_color table td {
+          border: 1px solid #eee; }
+        main .main_area #product .product_hyou .hyou_color table th {
+          background-color: #f9f8f6; }
+        main .main_area #product .product_hyou .hyou_color table thead th {
+          padding: 0; }
+        main .main_area #product .product_hyou .hyou_color table .th_1 {
+          width: 27%; }
+        main .main_area #product .product_hyou .hyou_color table .th_2, main .main_area #product .product_hyou .hyou_color table .th_3 {
+          width: 37%;
+          color: #887f69;
+          height: 4rem;
+          text-align: center;
+          font-size: 13px;
+          font-size: 1.3rem; }
+        main .main_area #product .product_hyou .hyou_color table .th_4 {
+          padding: 0;
+          text-align: center;
+          padding-right: 8px;
+          font-size: 13px;
+          font-size: 1.3rem; }
+        main .main_area #product .product_hyou .hyou_color table .td_1, main .main_area #product .product_hyou .hyou_color table .td_2 {
+          padding: 0;
+          text-align: center;
+          height: 3.5rem; }
+          main .main_area #product .product_hyou .hyou_color table .td_1 img, main .main_area #product .product_hyou .hyou_color table .td_2 img {
+            width: 20%;
+            vertical-align: middle; }
+      main .main_area #product .product_hyou .hyou_price table {
+        width: 100%;
+        border-bottom: hidden;
+        margin-bottom: 0; }
+        main .main_area #product .product_hyou .hyou_price table th {
+          padding-top: 2%; }
+        main .main_area #product .product_hyou .hyou_price table .second th img {
+          padding-top: 10%; }
+        main .main_area #product .product_hyou .hyou_price table .second td img {
+          width: 93%;
+          height: 46%; }
+      main .main_area #product .product_hyou .hyou_price .cartbox a {
+        display: block; }
+        main .main_area #product .product_hyou .hyou_price .cartbox a img {
+          display: flex;
+          margin-top: 3%;
+          margin-left: auto;
+          margin-right: auto; }
       main .main_area #product .product_setumei .setumei_midasi {
-        margin-top: 4%;
-        padding-bottom: 2%;
+        padding-bottom: 3%;
         border-bottom: 1px solid #eee; }
         main .main_area #product .product_setumei .setumei_midasi img {
-          margin-left: 1%;
-          width: 11%; }
+          margin-top: 10%; }
       main .main_area #product .product_setumei .setumei_title {
         margin-top: 3%; }
         main .main_area #product .product_setumei .setumei_title img {
-          width: 71%;
-          margin-left: 1%; }
+          display: none; }
+        main .main_area #product .product_setumei .setumei_title p {
+          color: #887f69;
+          font-size: 17px;
+          font-size: 1.7rem;
+          font-weight: bold;
+          position: relative; }
+        main .main_area #product .product_setumei .setumei_title p:before {
+          background-color: #887f69;
+          content: "";
+          height: 13px;
+          width: 13px;
+          margin-top: 3%;
+          position: absolute; }
       main .main_area #product .product_setumei .setumei_honbun {
-        width: 98%;
+        line-height: 119%; }
+      main .main_area #product .product_setumei .setumei_hyou table, main .main_area #product .product_setumei .setumei_hyou th, main .main_area #product .product_setumei .setumei_hyou td {
+        border: 1px solid #eee; }
+      main .main_area #product .product_setumei .setumei_hyou table {
+        width: 100%;
+        margin-bottom: 2%;
+        margin-top: 1%; }
+        main .main_area #product .product_setumei .setumei_hyou table th {
+          padding: 0;
+          font-size: 13px;
+          font-size: 1.3rem;
+          width: 28%;
+          vertical-align: middle;
+          text-align: center; }
+        main .main_area #product .product_setumei .setumei_hyou table td {
+          font-size: 1px;
+          font-size: 0.1rem; }
+      main .main_area #product .product_setumei .setumei_hyou .space {
+        height: 2.5rem; } }
+    @media (min-width: 551px) {
+      main .main_area #product {
+        width: 85%;
         display: block;
         margin-left: auto;
         margin-right: auto;
-        margin-top: 3%;
-        font-size: 10px;
-        font-size: 1rem;
-        line-height: 179%; }
-      main .main_area #product .product_setumei .setumei_hyou table {
-        width: 98%;
-        margin-top: 4%;
-        margin-left: auto;
-        margin-right: auto;
-        border: 1px solid #eee;
-        font-size: 1px;
-        font-size: 0.1rem;
-        padding: 0;
-        padding-bottom: 10%; }
-        main .main_area #product .product_setumei .setumei_hyou table th {
-          border: 1px solid #eee;
-          background-color: #f9f8f6;
-          color: #887f69;
-          width: 28%;
+        background-color: white; }
+        main .main_area #product .product_header {
+          display: flex;
+          justify-content: space-between;
+          padding-bottom: 4%;
+          border-bottom: 1px solid #626262; }
+          main .main_area #product .product_header .product_title {
+            width: 49%; }
+            main .main_area #product .product_header .product_title p {
+              display: block;
+              font-size: 12px;
+              font-size: 1.2rem;
+              font-weight: bold;
+              margin-bottom: 0;
+              margin-left: 3%;
+              margin-top: 12%; }
+          main .main_area #product .product_header .product_id {
+            width: 49%; }
+            main .main_area #product .product_header .product_id p {
+              color: #b0b0b0;
+              display: flex;
+              margin-left: 77%;
+              margin-top: 13%;
+              margin-bottom: 0;
+              font-size: 10px;
+              font-size: 1rem; }
+        main .main_area #product .product_image {
+          display: flex;
+          flex-wrap: wrap;
+          margin-top: 3%;
+          padding-bottom: 2%;
+          border-bottom: 1px solid #626262; }
+          main .main_area #product .product_image .main_image {
+            width: 70%; }
+            main .main_area #product .product_image .main_image img {
+              width: 98.5%;
+              margin-left: 2%; }
+          main .main_area #product .product_image .image_columns {
+            width: 29%; }
+            main .main_area #product .product_image .image_columns ul {
+              display: flex;
+              flex-wrap: wrap;
+              margin-bottom: 0; }
+              main .main_area #product .product_image .image_columns ul li {
+                list-style: none;
+                width: 40%;
+                margin-bottom: 0;
+                margin-left: 7%; }
+                main .main_area #product .product_image .image_columns ul li img {
+                  width: 108%; }
+        main .main_area #product .product_hyou .hyou_color .color_title img {
+          margin-top: 3%;
+          margin-left: 1%;
+          width: 17%; }
+        main .main_area #product .product_hyou .hyou_color table, main .main_area #product .product_hyou .hyou_color th, main .main_area #product .product_hyou .hyou_color td {
+          border: 1px solid #eee; }
+        main .main_area #product .product_hyou .hyou_color th, main .main_area #product .product_hyou .hyou_color td {
           text-align: center;
           vertical-align: middle;
           padding: 0;
-          height: 3rem; }
-        main .main_area #product .product_setumei .setumei_hyou table td {
-          width: 72%;
+          font-size: 10px;
+          font-size: 1rem; }
+        main .main_area #product .product_hyou .hyou_color th {
+          color: #887f69;
+          background-color: #f9f8f6; }
+        main .main_area #product .product_hyou .hyou_color tr {
+          height: 29px; }
+        main .main_area #product .product_hyou .hyou_color table {
+          width: 98%;
+          margin: 1% auto 3.5% auto; }
+          main .main_area #product .product_hyou .hyou_color table thead .th_1 {
+            width: 28%; }
+          main .main_area #product .product_hyou .hyou_color table thead .th_2, main .main_area #product .product_hyou .hyou_color table thead .th_3 {
+            width: 36%;
+            padding: 0;
+            border-right: hidden; }
+          main .main_area #product .product_hyou .hyou_color table tbody td img {
+            width: 10%; }
+          main .main_area #product .product_hyou .hyou_color table tbody .td_1, main .main_area #product .product_hyou .hyou_color table tbody .td_2 {
+            border-right: hidden; }
+        main .main_area #product .product_hyou .hyou_price table, main .main_area #product .product_hyou .hyou_price th, main .main_area #product .product_hyou .hyou_price td {
+          border: 1px solid #eee;
           padding: 0;
-          color: #887f69; }
-          main .main_area #product .product_setumei .setumei_hyou table td span {
-            font-size: 1px;
-            font-size: 0.1rem;
-            margin-left: 3%; }
-      main .main_area #product .product_setumei .setumei_hyou .space {
-        height: 3rem;
-        width: 100%; } }
+          border-right: hidden;
+          border-left: hidden; }
+        main .main_area #product .product_hyou .hyou_price span {
+          display: flex;
+          border-bottom: 1px solid #eee; }
+          main .main_area #product .product_hyou .hyou_price span table {
+            width: 56%;
+            margin-bottom: 0;
+            margin-left: 1%;
+            border-bottom: 1px solid #eee; }
+            main .main_area #product .product_hyou .hyou_price span table th {
+              width: 27%; }
+              main .main_area #product .product_hyou .hyou_price span table th img {
+                width: 49%;
+                margin-top: 18%; }
+            main .main_area #product .product_hyou .hyou_price span table .border {
+              width: 64%; }
+              main .main_area #product .product_hyou .hyou_price span table .border img {
+                width: 58%;
+                margin-top: 11%;
+                margin-bottom: 7%;
+                margin-left: 13%; }
+            main .main_area #product .product_hyou .hyou_price span table .second th {
+              width: 15%; }
+              main .main_area #product .product_hyou .hyou_price span table .second th img {
+                width: 71%;
+                margin-top: 14%; }
+            main .main_area #product .product_hyou .hyou_price span table .second td {
+              width: 42%;
+              height: 5.2rem; }
+              main .main_area #product .product_hyou .hyou_price span table .second td img {
+                width: 70%;
+                height: 40%;
+                margin-top: 6%;
+                margin-left: 14%; }
+          main .main_area #product .product_hyou .hyou_price span .cartbox {
+            width: 42%; }
+            main .main_area #product .product_hyou .hyou_price span .cartbox a {
+              display: block; }
+              main .main_area #product .product_hyou .hyou_price span .cartbox a img {
+                width: 90%;
+                margin-left: 9%; }
+        main .main_area #product .product_setumei .setumei_midasi {
+          margin-top: 4%;
+          padding-bottom: 2%;
+          border-bottom: 1px solid #eee; }
+          main .main_area #product .product_setumei .setumei_midasi img {
+            margin-left: 1%;
+            width: 11%; }
+        main .main_area #product .product_setumei .setumei_title {
+          margin-top: 3%; }
+          main .main_area #product .product_setumei .setumei_title img {
+            width: 71%;
+            margin-left: 1%; }
+          main .main_area #product .product_setumei .setumei_title p {
+            display: none; }
+        main .main_area #product .product_setumei .setumei_honbun {
+          width: 98%;
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          margin-top: 3%;
+          font-size: 10px;
+          font-size: 1rem;
+          line-height: 179%; }
+        main .main_area #product .product_setumei .setumei_hyou table {
+          width: 98%;
+          margin-top: 4%;
+          margin-left: auto;
+          margin-right: auto;
+          border: 1px solid #eee;
+          font-size: 1px;
+          font-size: 0.1rem;
+          padding: 0;
+          padding-bottom: 10%; }
+          main .main_area #product .product_setumei .setumei_hyou table th {
+            border: 1px solid #eee;
+            background-color: #f9f8f6;
+            color: #887f69;
+            width: 28%;
+            text-align: center;
+            vertical-align: middle;
+            padding: 0;
+            height: 3rem; }
+          main .main_area #product .product_setumei .setumei_hyou table td {
+            width: 72%;
+            padding: 0;
+            color: #887f69; }
+            main .main_area #product .product_setumei .setumei_hyou table td span {
+              font-size: 1px;
+              font-size: 0.1rem;
+              margin-left: 3%; }
+        main .main_area #product .product_setumei .setumei_hyou .space {
+          height: 3rem;
+          width: 100%; } }
 
 @media (min-width: 551px) {
   #aside {

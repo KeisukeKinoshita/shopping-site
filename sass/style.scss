@@ -801,6 +801,7 @@ main{
         }
         
         #product{
+            font-family:serif;
             @media(max-width:550px){
                 .product_title{
                     p{
@@ -901,6 +902,7 @@ main{
                         table{
                         width:100%;
                         border-bottom:hidden;
+                        margin-bottom:0;
                         th{
                             padding-top:2%;
                         }
@@ -929,6 +931,62 @@ main{
                                     margin-right:auto;
                                 }
                             }
+                        }
+                    }
+                }
+                .product_setumei{
+                    .setumei_midasi{
+                        padding-bottom:3%;
+                        border-bottom:1px solid #eee;
+                        img{
+                            margin-top:10%;
+                        }
+                    }
+                    .setumei_title{
+                        margin-top:3%;
+                        img{
+                            display:none;
+                        }
+                        p{
+                            color:$suzu;
+                            @include fontsize(17);
+                            font-weight:bold;
+                            position:relative;
+                        }
+                        p:before{
+                            background-color:$suzu;
+                            content:"";
+                            height:13px;
+                            width:13px;
+                            margin-top:3%;
+                            position:absolute;
+                        }
+                    }
+                    .setumei_honbun{
+                        line-height:119%;
+                        
+                    }
+                    .setumei_hyou{
+                        table,th,td{
+                            border:1px solid #eee;
+                        }
+                        table{
+                            width:100%;
+                            margin-bottom:2%;
+                            margin-top:1%;
+                            th{
+                                padding:0;
+                                @include fontsize(13);
+                                width:28%;
+                                vertical-align:middle;
+                                text-align:center;
+                            }
+                            td{
+                                @include fontsize(1);
+                            }
+                        }
+                        .space{
+                            height:2.5rem;
                         }
                     }
                 }
@@ -1130,6 +1188,9 @@ main{
                       img{
                       width:71%;
                       margin-left:1%;
+                      }
+                      p{
+                          display:none;
                       }
                   }
                    .setumei_honbun{
