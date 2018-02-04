@@ -915,7 +915,7 @@ main .main_area {
       width: 92%;
       margin-right: auto;
       margin-left: auto;
-      margin-bottom: 4%; }
+      margin-bottom: 3%; }
       #aside #search .search_title {
         margin-top: 3%;
         width: 100%; }
@@ -1020,7 +1020,8 @@ main .main_area {
           height: 10px;
           content: "";
           border: 0px;
-          margin-top: 55.5%;
+          margin-top: 67.5%;
+          margin-left: -25%;
           border-top: 1px solid white;
           border-right: 1px solid white;
           position: absolute;
@@ -1119,7 +1120,8 @@ main .main_area {
           height: 10px;
           content: "";
           border: 0;
-          margin-top: 55.5%;
+          margin-top: 67.5%;
+          margin-left: -25%;
           border-top: 1px solid white;
           border-right: 1px solid white;
           position: absolute;
@@ -1129,7 +1131,8 @@ main .main_area {
           height: 10px;
           content: "";
           border: 0;
-          margin-top: 55.5%;
+          margin-top: 37.5%;
+          margin-left: 4%;
           border-top: 1px solid white;
           border-right: 1px solid white;
           position: absolute;
