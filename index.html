@@ -18,12 +18,12 @@
         <header>
             <div id="header_in" class="container">
                 <div class="row">
-                    <div id="header_logo" class="u-full-width six columns">
+                    <div id="header_logo" class="u-full-width four columns">
                         <a href="index.html">
                             <img src="images/top_sp/logo.png" alt="logo画像" srcset="images/top_sp/logo@2x.png 2x">
                         </a>
                     </div>
-                    <div class="u-full-width six columns navi">
+                    <div class="u-full-width eight columns navi">
                         <div id="navi_bar">
                             <div id="pc_navi_li">
                               <ul style="margin-bottom:2%">
@@ -246,13 +246,13 @@
                 <div id="pagelink">
                     <div class="link_box">
                         <a>
-                            <img src="images/top/pagelink.png">
+                            <img src="images/top/pagelink.png"><div class="yajirusi"></div>
                         </a>
                     </div>
                 </div>
                 <div id="category">
                     <div class="cate_navi_button">
-                        <a><img src="images/top/categories.png" alt="カテゴリー一覧"></a>
+                        <a><img src="images/top/categories.png" alt="カテゴリー一覧"><div class="yajirusi"></div></a>
                     </div>
                     <ul class="cate_navi_li">
                         <li><a href="#"><span>カテゴリー名</span></a></li>
@@ -326,7 +326,10 @@
             $(function(){
                 $(document).ready(function(){
                 $(".cate_navi_button").click(function(){
+                    var mark= $(this).find(".yajirusi");
+                    $(mark).toggleClass("add");
                     $(".cate_navi_li").slideToggle();
+                    
                 });
             });
             });
